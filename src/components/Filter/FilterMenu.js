@@ -5,11 +5,9 @@ function FilterMenu({menuItem}) {
     <Content className='filterMenu'>
       {menuItem.map((item) => {
         return (
-          <div className="video">
-              <iframe width="420" height="315"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY">
-              </iframe>
-              <p>{item.title}</p>
+          <div className="video" key={item.id}>
+            <iframe  src={`https://www.youtube.com/embed/${item.link}`} allowFullScreen></iframe>
+            <p>{item.title}</p>
           </div>
         )
       })}
@@ -29,6 +27,8 @@ const Content = styled.div`
     margin: 20px 0;
     max-width: 350px;
     width: 100%;
+    background-color: #2F364B;
+    color: white;
     iframe {
       height: 200px;
       width: 100%;

@@ -19,14 +19,16 @@ const FilterButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px 0;
+  flex-wrap: wrap;
+  margin: 80px 0 40px 0;
 
   button {
+    display: inline-block;
     background-color: #C6F4F8;
     border-radius: 20px;
     border: none;
-    padding: 5px 15px;
-    margin: 0 5px;
+    padding: 4px 12px;
+    margin: 3px;
     font-size: 18px;
     color: black;
   }
